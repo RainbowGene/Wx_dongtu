@@ -1,17 +1,17 @@
 <script>
-	export default {
-		onLaunch: function() {
-			console.log('App Launch')
-		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
-		}
-	}
+export default {
+  onLaunch: function() {
+    // app 启动
+  },
+  onShow: function() {
+    // 页面显示时
+  },
+  onHide: function() {
+    // 页面隐藏时
+  }
+};
 </script>
 
-<style>
-	/*每个页面公共css */
+<style lang="scss">
+@import "@/static/css/base.wxss";
 </style>

@@ -1,16 +1,79 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [{
+			"path": "pages/home/index"
+		},
 		{
-			"path": "pages/index/index",
+			"path": "pages/video/index"
+		},
+		{
+			"path": "pages/horizontal/index"
+		},
+		{
+			"path": "pages/search/index"
+		},
+		{
+			"path": "pages/mine/index"
+		},
+		{
+			"path": "pages/imgCategory/index"
+		},
+		{
+			"path": "pages/video/videoPlay/index"
+		},
+		{
+			"path": "pages/album/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "专辑详情"
+			}
+		},
+		{
+			"path": "pages/imgDetail/index",
+			"style": {
+				"navigationBarTitleText": "图片详情"
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "懂你找图",
+		"navigationBarBackgroundColor": "#000"
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#d4237a",
+		"backgroundColor": "#fff",
+		"position": "bottom",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "./static/icon/shouye0.png",
+				"selectedIconPath": "./static/icon/shouye.png"
+			},
+			{
+				"pagePath": "pages/horizontal/index",
+				"text": "横屏",
+				"iconPath": "./static/icon/tupian0.png",
+				"selectedIconPath": "./static/icon/tupian.png"
+			},
+			{
+				"pagePath": "pages/video/index",
+				"text": "精美视频",
+				"iconPath": "./static/icon/yingyuan0.png",
+				"selectedIconPath": "./static/icon/yingyuan.png"
+			},
+			{
+				"pagePath": "pages/search/index",
+				"text": "搜索",
+				"iconPath": "./static/icon/sousuo0.png",
+				"selectedIconPath": "./static/icon/sousuo.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "./static/icon/wode0.png",
+				"selectedIconPath": "./static/icon/wode.png"
+			}
+		]
 	}
 }
